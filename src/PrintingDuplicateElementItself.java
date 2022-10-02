@@ -17,16 +17,16 @@ public class PrintingDuplicateElementItself {
 
         }
 
-//
-//        for(Map.Entry<Integer, Integer> entrySet : m.entrySet()){
-//            System.out.println(entrySet.getKey() + " :" + entrySet.getValue());
-//        }
+        for(Map.Entry<Integer,Integer> map : m.entrySet()){
+            if(map.getValue() > 2)
+                System.out.println(map.getKey());
+        }
 
-       for(int i=0; i<a.length; i++){
-           if(m.get(a[i]) != -1){
-               System.out.println(a[i] + " :" + m.get(a[i]));
-               m.put(a[i],-1);
-           }
-       }
+//       for(int i=0; i<a.length; i++){
+//           if(m.get(a[i]) != -1){
+//               System.out.println(a[i] + " :" + m.get(a[i]));
+//               m.put(a[i],-1);
+//           }
+//       }
     }
 }
